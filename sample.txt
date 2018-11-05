@@ -1,0 +1,26 @@
+print(dataframe.iloc[[0,2,5,9]]) => get row data by row indexes
+
+
+
+# get all attribute names
+    attribute_names = dataframe.columns.tolist()
+
+    data_attrs = []
+    # process all attribute names
+    for attr in attribute_names:
+        # init tree attribute
+        data_attribute = TreeAttribute(attr)
+
+        # get all unique values of this particular attribute
+        attribute_values = dataframe[attr].unique().tolist()
+
+        # for each unique value of a particular attribute
+        for value in attribute_values:
+            # get all row indexes
+            row_indexes = dataframe.index[dataframe[attr] == value].tolist()
+
+            # update treeAttribute
+            data_attribute.update_attribute_list(AttributeValue(value, row_indexes))
+
+        # update tree
+        data_attrs.append(data_attribute)

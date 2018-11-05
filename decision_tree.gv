@@ -1,0 +1,7 @@
+digraph Tree {0 [label="age
+ IG:0.4955" shape=ellipse];1 [label="occupation
+ IG:0.3113" shape=ellipse];2 [label="high" shape=box];3 [label="security
+ IG:1.0000" shape=ellipse];4 [label="average" shape=box];5 [label="high" shape=box];6 [label="occupation
+ IG:0.9183" shape=ellipse];7 [label="average" shape=box];8 [label="low" shape=box];9 [label="occupation
+ IG:0.9183" shape=ellipse];10 [label="high" shape=box];11 [label="security
+ IG:1.0000" shape=ellipse];12 [label="average" shape=box];13 [label="low" shape=box];0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="old"];1 -> 2 [labeldistance=2.5, labelangle=45, headlabel="clerk"];1 -> 3 [labeldistance=2.5, labelangle=45, headlabel="self-employed"];3 -> 4 [labeldistance=2.5, labelangle=45, headlabel="sparse"];3 -> 5 [labeldistance=2.5, labelangle=45, headlabel="sufficient"];0 -> 6 [labeldistance=2.5, labelangle=45, headlabel="young"];6 -> 7 [labeldistance=2.5, labelangle=45, headlabel="clerk"];6 -> 8 [labeldistance=2.5, labelangle=45, headlabel="self-employed"];0 -> 9 [labeldistance=2.5, labelangle=45, headlabel="average"];9 -> 10 [labeldistance=2.5, labelangle=45, headlabel="clerk"];9 -> 11 [labeldistance=2.5, labelangle=45, headlabel="self-employed"];11 -> 12 [labeldistance=2.5, labelangle=45, headlabel="sufficient"];11 -> 13 [labeldistance=2.5, labelangle=45, headlabel="sparse"];}
